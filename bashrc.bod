@@ -1,0 +1,16 @@
+# Aliases
+alias diff=colordiff
+alias git-log-graph="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gcp='git cherry-pick'
+alias gdt='git diff-tree --no-commit-id --name-only -r'
+alias gl='git log'
+alias gsl='git shortlog -sne'
+alias grb='git rebase'
+alias grbi='git rebase -i'
+alias grbc='git rebase --continue'
+alias gad='git add `git diff HEAD~1 --name-only`'
+alias gsh='git show HEAD'
+alias vgd='vim `git diff HEAD~1 --name-only`'
+
+# Editor
+export EDITOR=vim

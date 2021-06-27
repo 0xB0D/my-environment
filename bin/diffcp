@@ -1,2 +1,8 @@
 #!/bin/sh
-git diff HEAD~1 > /tmp/zed.diff && ~/Development/linux/scripts/checkpatch.pl -strict /tmp/zed.diff && rm /tmp/zed.diff
+if [ -z "$KERNELPATH" ]
+then
+	echo "Please set KERNELPATH when running this utility";
+	echo "KERNELPATH=`pwd` ~/my-environment/bin/diffcp"
+	exit 1;
+fi
+git diff HEAD~1 | $KERNELPATH/scripts/checkpatch.pl -strict

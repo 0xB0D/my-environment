@@ -5,4 +5,4 @@ then
 	echo "KERNELPATH=`pwd` ~/my-environment/bin/diffcp"
 	exit 1;
 fi
-git diff HEAD~1 | $KERNELPATH/scripts/checkpatch.pl -strict
+git diff HEAD~1 | $KERNELPATH/scripts/checkpatch.pl --strict

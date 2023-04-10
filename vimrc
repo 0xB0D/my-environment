@@ -1,7 +1,7 @@
 set ruler
 set hlsearch
 syntax on
-colorscheme ron
+hi Normal ctermbg=NONE guibg=NONE
 autocmd Filetype gitcommit setlocal spell textwidth=75
 autocmd Filetype diff setlocal spell textwidth=75
 set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:~:.:h\")})%)%(\ %a%)

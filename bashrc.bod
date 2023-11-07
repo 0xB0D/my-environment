@@ -11,6 +11,10 @@ alias grbc='git rebase --continue'
 alias gad='git add `git diff HEAD~1 --name-only`'
 alias gsh='git show HEAD'
 alias vgd='vim `git diff HEAD~1 --name-only`'
+alias b4='~/Development/b4/b4.sh'
 
 # Editor
 export EDITOR=vim
+
+# Default GCC colors
+export GCC_COLORS=

@@ -8,4 +8,5 @@ then
 fi
 for file in *.patch;
 do $KERNELPATH/scripts/checkpatch.pl --strict $file;
+codespell $file;
 done
